@@ -1,0 +1,513 @@
+/* Home.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Noto Sans Telugu", sans-serif;
+
+  background:
+    radial-gradient(circle at 50% 10%, #8b6a32 0%, transparent 35%),
+    radial-gradient(circle at 20% 70%, #4a2924 0%, transparent 35%),
+    linear-gradient(135deg, #171316, #2a1a16, #120f10);
+
+  min-height: 100vh;
+}
+
+/* Main Container */
+.home-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 15px;
+}
+
+/* Donation Form Card */
+.donation-card {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 32px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(42, 26, 22, 0.97),
+      rgba(74, 41, 36, 0.96)
+    );
+
+  border: 2px solid #d4a72c;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.55),
+    0 0 25px rgba(212, 167, 44, 0.18);
+
+  text-align: center;
+}
+
+/* Vinayakudu Image */
+.vinayakudu-img {
+  width: 150px;
+  height: 150px;
+
+  display: block;
+  margin: 0 auto 15px;
+
+  border-radius: 50%;
+
+  /* Fill the complete circle */
+  object-fit: cover;
+
+  object-position: center;
+
+  border: 5px solid #d4a72c;
+
+  box-shadow:
+    0 0 15px rgba(244, 211, 94, 0.7),
+    0 0 30px rgba(212, 167, 44, 0.35);
+}
+/* Heading */
+.heading {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-bottom: 28px;
+}
+
+.heading h1 {
+  color: #f4d35e;
+
+  font-size: 27px;
+
+  font-weight: 700;
+
+  text-shadow:
+    0 0 8px rgba(244, 211, 94, 0.4);
+}
+
+.heading h2 {
+  margin-top: 7px;
+
+  color: #e98ab5;
+
+  font-size: 19px;
+
+  font-weight: 600;
+}
+
+/* Form */
+form {
+  text-align: left;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 18px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #f4d35e;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+/* Inputs */
+.form-group input {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  background: #211716;
+
+  color: #ffffff;
+
+  border: 1.5px solid #8b6330;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+/* Placeholder */
+.form-group input::placeholder {
+  color: #b9a8a0;
+}
+
+/* Focus */
+.form-group input:focus {
+  border-color: #f4d35e;
+
+  background: #2d1b19;
+
+  box-shadow:
+    0 0 8px rgba(244, 211, 94, 0.35);
+}
+
+/* File input */
+.form-group input[type="file"] {
+  cursor: pointer;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+
+  padding: 14px;
+
+  margin-top: 5px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #b57b1f,
+      #f4d35e,
+      #d4a72c
+    );
+
+  color: #2a1a16;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 15px rgba(212, 167, 44, 0.25);
+
+  transition: 0.3s;
+}
+
+/* Hover */
+button:hover {
+  transform: translateY(-2px);
+
+  background:
+    linear-gradient(
+      90deg,
+      #f4d35e,
+      #fff0a8,
+      #d4a72c
+    );
+
+  box-shadow:
+    0 8px 20px rgba(244, 211, 94, 0.35);
+}
+
+/* Active */
+button:active {
+  transform: scale(0.98);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .donation-card {
+    padding: 24px 18px;
+  }
+
+  .vinayakudu-img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .heading h1 {
+    font-size: 23px;
+  }
+
+  .heading h2 {
+    font-size: 17px;
+  }
+}
+.success-box {
+  margin-top: 25px;
+  padding: 25px 20px;
+
+  background: linear-gradient(
+    145deg,
+    #3b2520,
+    #211517
+  );
+
+  border: 2px solid #d4a72c;
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow:
+    0 0 20px rgba(212, 167, 44, 0.25);
+}
+
+.success-circle {
+  width: 90px;
+  height: 65px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #d4a72c;
+
+  color: #2a1a16;
+
+  font-size: 38px;
+  font-weight: bold;
+
+  box-shadow:
+    0 0 20px rgba(244, 211, 94, 0.6);
+}
+
+.success-box h3 {
+  color: #f4d35e;
+
+  font-size: 21px;
+
+  margin-bottom: 20px;
+}
+
+.donation-details {
+  padding: 15px;
+
+  background: rgba(15, 10, 10, 0.7);
+
+  border: 1px solid #76502b;
+
+  border-radius: 12px;
+}
+
+.detail-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 10px 5px;
+
+  border-bottom: 1px solid #493029;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row span {
+  color: #e98ab5;
+
+  font-weight: 600;
+}
+
+.detail-row strong {
+  color: #f4d35e;
+
+  font-size: 16px;
+}
+
+.thank-message {
+  margin: 20px 5px;
+
+  color: #e98ab5;
+
+  line-height: 1.7;
+
+  font-size: 14px;
+}
+
+.new-button {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #8b5e20,
+    #d4a72c,
+    #8b5e20
+  );
+
+  color: #241612;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.new-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 15px rgba(212, 167, 44, 0.4);
+}
+.success-box {
+  width: 100%;
+  padding: 35px 30px;
+
+  background: #321f1d;
+
+  border: 3px solid #d4a72c;
+  border-radius: 25px;
+
+  text-align: center;
+
+  box-shadow:
+    0 0 25px rgba(212, 167, 44, 0.25);
+}
+
+.success-circle img{
+  width: 98px;
+  height: 98px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #d4a72c;
+
+  color: #2b1b18;
+
+  font-size: 65px;
+  font-weight: bold;
+
+  box-shadow:
+    0 0 25px rgba(212, 167, 44, 0.5);
+}
+
+.success-box h3 {
+  margin-bottom: 35px;
+
+  color: #f4d35e;
+
+  font-size: 28px;
+  font-weight: 500;
+
+  line-height: 1.3;
+}
+
+.donation-details {
+  padding: 20px;
+
+  background: #160e0e;
+
+  border: 1px solid #76502b;
+  border-radius: 18px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 8px;
+
+  border-bottom: 1px solid #49302b;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row span {
+  color: #e98ab5;
+
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.detail-row strong {
+  color: #f4d35e;
+
+  font-size: 21px;
+}
+
+.whatsapp-button {
+  width: 100%;
+  padding: 16px;
+
+  margin-top: 10px;
+  margin-bottom: 12px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: #25d366;
+
+  color: white;
+
+  font-size: 19px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 20px rgba(37, 211, 102, 0.4);
+}
+
+.new-button {
+  width: 100%;
+  padding: 16px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(
+    90deg,
+    #8b5e20,
+    #d4a72c,
+    #8b5e20
+  );
+
+  color: #17100f;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
