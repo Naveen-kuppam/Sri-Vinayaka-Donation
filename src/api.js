@@ -1,3 +1,3 @@
-const API = "https://sri-vinayaka-backend-3.onrender.com/api";
+const API = "https://sri-vinayaka-backend1.onrender.com/api";
 
 export default API;
